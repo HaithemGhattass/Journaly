@@ -9,21 +9,21 @@ import SwiftUI
 struct CustomTabBarView: View {
     @Binding  var tabSelection: Int
     @Namespace private var animationNamespace
-    
+
     let tabBarItems: [(image:String ,title:String)] = [
         ("book","Journals"),
-        ("plus.circle","Create"),
+       // ("plus.circle","Create"),
         ("person","Profile")
     ]
     
     var body: some View {
         ZStack{
             Capsule()
-                .frame(height: 80)
+                .frame(width:250,height: 80)
                 .foregroundColor(Color(.secondarySystemBackground))
                 .shadow(radius: 2)
             HStack{
-                ForEach(0..<3){ index in
+                ForEach(0..<2){ index in
                     Button{
                             tabSelection = index + 1
                             print(tabSelection)
@@ -53,10 +53,11 @@ struct CustomTabBarView: View {
                     }
                 }
             }
-            .frame(height: 80)
+            
+            .frame(width:250,height: 80)
             .clipShape(Capsule())
         }
-        .padding(.horizontal)
+       
     }
 }
 

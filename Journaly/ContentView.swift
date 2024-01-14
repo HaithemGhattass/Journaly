@@ -9,22 +9,44 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var tabSelection = 1
-    
+    @State private var ShowCreate = false
     var body: some View {
         TabView(selection: $tabSelection) {
-            Text("Tab Content 1")
+            JournalsView(ShowCreate: $ShowCreate)
                 .tag(1)
             Text("Tab Content 2")
                 .tag(2)
-            Text("Tab Content 3")
-                .tag(3)
         }
-        .overlay(alignment: .bottom){
-            CustomTabBarView(tabSelection: $tabSelection)
+        .overlay(alignment: .bottom) {
+            HStack{
+                CustomTabBarView(tabSelection: $tabSelection)
+                    .padding(.leading)
+                    .disabled(ShowCreate ? true : false)
+                if(tabSelection == 1){
+                    ZStack{
+                            Capsule()
+                                .frame(height: 80)
+                                .foregroundColor(Color(.secondarySystemBackground))
+                                .shadow(radius: 2)
+                                    Button{
+                                               ShowCreate = true
+                                    }label: {
+                                        Image(systemName: "square.and.pencil")
+                                            .foregroundColor( ShowCreate ? .blue :  .gray)
+                                            .font(.system(size: 25))
+                                        
+                                    }
+                                    .disabled(ShowCreate ? true : false)
+                            .frame(width:80,height: 80)
+                          
+                        }
+                    .padding(.horizontal,30)
+                }
+            }
+            .padding( .trailing, tabSelection == 1 ? -10 : 139 )
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

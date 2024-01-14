@@ -12,6 +12,9 @@
 		D5029CBE2B4FFDA80031E240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5029CBD2B4FFDA80031E240 /* Assets.xcassets */; };
 		D5029CC12B4FFDA80031E240 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5029CC02B4FFDA80031E240 /* Preview Assets.xcassets */; };
 		D5029CC82B4FFDCB0031E240 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5029CC72B4FFDCB0031E240 /* CustomTabBarView.swift */; };
+		D508FB262B53629E004FA804 /* CreatePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FB252B53629E004FA804 /* CreatePageView.swift */; };
+		D508FB282B53D4C7004FA804 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FB272B53D4C7004FA804 /* Extensions.swift */; };
+		D508FB2A2B53DD62004FA804 /* JournalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508FB292B53DD62004FA804 /* JournalsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		D5029CBD2B4FFDA80031E240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5029CC02B4FFDA80031E240 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5029CC72B4FFDCB0031E240 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		D508FB252B53629E004FA804 /* CreatePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePageView.swift; sourceTree = "<group>"; };
+		D508FB272B53D4C7004FA804 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D508FB292B53DD62004FA804 /* JournalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +61,12 @@
 			children = (
 				D5029CB92B4FFDA70031E240 /* JournalyApp.swift */,
 				D5029CBB2B4FFDA70031E240 /* ContentView.swift */,
+				D508FB292B53DD62004FA804 /* JournalsView.swift */,
+				D508FB252B53629E004FA804 /* CreatePageView.swift */,
 				D5029CC72B4FFDCB0031E240 /* CustomTabBarView.swift */,
 				D5029CBD2B4FFDA80031E240 /* Assets.xcassets */,
 				D5029CBF2B4FFDA80031E240 /* Preview Content */,
+				D508FB272B53D4C7004FA804 /* Extensions.swift */,
 			);
 			path = Journaly;
 			sourceTree = "<group>";
@@ -86,6 +95,8 @@
 			dependencies = (
 			);
 			name = Journaly;
+			packageProductDependencies = (
+			);
 			productName = Journaly;
 			productReference = D5029CB62B4FFDA70031E240 /* Journaly.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,8 @@
 				Base,
 			);
 			mainGroup = D5029CAD2B4FFDA70031E240;
+			packageReferences = (
+			);
 			productRefGroup = D5029CB72B4FFDA70031E240 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,9 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D508FB282B53D4C7004FA804 /* Extensions.swift in Sources */,
 				D5029CC82B4FFDCB0031E240 /* CustomTabBarView.swift in Sources */,
 				D5029CBC2B4FFDA70031E240 /* ContentView.swift in Sources */,
 				D5029CBA2B4FFDA70031E240 /* JournalyApp.swift in Sources */,
+				D508FB2A2B53DD62004FA804 /* JournalsView.swift in Sources */,
+				D508FB262B53629E004FA804 /* CreatePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
